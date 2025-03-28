@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88970a0117c062eed55fa8728fc43833",
+    "content-hash": "11764fb4397ca25875bd22c5c926af3a",
     "packages": [
         {
             "name": "brick/math",
@@ -5787,6 +5787,54 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "dkpankaj1/adminkit",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dkpankaj1/laraveladminkit.git",
+                "reference": "b6c8a004a1b6a60f0fd6a8a67d924e272f25b85c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dkpankaj1/laraveladminkit/zipball/b6c8a004a1b6a60f0fd6a8a67d924e272f25b85c",
+                "reference": "b6c8a004a1b6a60f0fd6a8a67d924e272f25b85c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0|^11.0|^12.0",
+                "php": "^8.1|^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dkpankaj1\\AdminKit\\AdminKitServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dkpankaj1\\AdminKit\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dipankar kumar pankaj",
+                    "email": "dipankarpankaj38@gmail.com"
+                }
+            ],
+            "description": "A Laravel package for an admin dashboard kit with authentication, datatables, and UI components.",
+            "support": {
+                "issues": "https://github.com/dkpankaj1/laraveladminkit/issues",
+                "source": "https://github.com/dkpankaj1/laraveladminkit/tree/v1.0.3"
+            },
+            "time": "2025-03-27T14:55:58+00:00"
+        },
         {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
