@@ -6,10 +6,20 @@
         "dev": "vite"
     },
     "devDependencies": {
+        "@popperjs/core": "^2.11.8",
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.8.2",
+        "bootstrap": "^5.3.3",
         "concurrently": "^9.0.1",
+        "jarallax": "^2.2.1",
+        "jquery": "^3.7.1",
         "laravel-vite-plugin": "^1.2.0",
+        "magnific-popup": "^1.2.0",
+        "owl.carousel": "^2.3.4",
+        "popper.js": "^1.16.1",
+        "select2": "^4.1.0-rc.0",
+        "shuffle": "^0.2.5",
+        "swiper": "^11.2.6",
         "tailwindcss": "^4.0.0",
         "vite": "^6.0.11"
     }

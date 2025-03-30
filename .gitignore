@@ -4,6 +4,7 @@
 /public/hot
 /public/storage
 /public/templete
+/public/uploads
 /storage/*.key
 /storage/pail
 /vendor

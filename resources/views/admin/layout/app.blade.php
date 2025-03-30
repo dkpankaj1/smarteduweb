@@ -11,13 +11,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{asset('assets/kadso/images/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{ asset('assets/kadso/images/favicon.ico') }}">
 
     <!-- App css -->
-    <link href="{{asset('assets/kadso/css/app.min.css')}}" rel="stylesheet" type="text/css" id="app-style" />
+    <link href="{{ asset('assets/kadso/css/app.min.css') }}" rel="stylesheet" type="text/css" id="app-style" />
+    <link rel="stylesheet" href="{{ asset('assets/toastr/toastr.min.css') }}" />
+
+    @stack('style')
 
     <!-- Icons -->
-    <link href="{{asset('assets/kadso/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/kadso/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -49,7 +52,7 @@
 
                     <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
                         <div class="flex-grow-1">
-                            <h4 class="fs-18 fw-semibold m-0">Dashboard</h4>
+                            <h4 class="fs-18 fw-semibold m-0">@yield('title', 'Dashboard')</h4>
                         </div>
 
                         <div class="text-end">
@@ -61,7 +64,7 @@
                     </div>
 
 
-                    {{$slot}}
+                    {{ $slot }}
 
 
                 </div> <!-- container-fluid -->
@@ -82,16 +85,20 @@
     <!-- end page -->
 
     <!-- Vendor -->
-    <script src="{{asset('assets/kadso/libs/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/simplebar/simplebar.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/node-waves/waves.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/waypoints/lib/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/jquery.counterup/jquery.counterup.min.js')}}"></script>
-    <script src="{{asset('assets/kadso/libs/feather-icons/feather.min.js')}}"></script>
+    <script src="{{ asset('assets/kadso/libs/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/simplebar/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/node-waves/waves.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/jquery.counterup/jquery.counterup.min.js') }}"></script>
+    <script src="{{ asset('assets/kadso/libs/feather-icons/feather.min.js') }}"></script>
+    <script src="{{ asset('assets/toastr/toastr.min.js') }}"></script>
+
+    @stack('script')
 
     <!-- App js-->
-    <script src="{{asset('assets/kadso/js/app.js')}}"></script>
+    <script src="{{ asset('assets/kadso/js/app.js') }}"></script>
+    <x-toastr />
 
 </body>
 
