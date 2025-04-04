@@ -11,7 +11,7 @@ use Intervention\Image\Interfaces\ImageInterface;
 class ImageService
 {
     protected $manager;
-    protected $defaultPath = 'upload';
+    protected $defaultPath = 'uploads';
 
     public function __construct()
     {
