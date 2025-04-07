@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\Admin\AccountController;
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\CrousalController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Models\Crousal;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
@@ -23,6 +25,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
         Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
+        Route::resource('crousals',CrousalController::class);
+        
         Route::group(['prefix' => "settings", 'as' => 'settings.'], function () {
             Route::get('/',[SettingController::class,'edit'])->name('edit');
             Route::put('/',[SettingController::class,'update'])->name('update');

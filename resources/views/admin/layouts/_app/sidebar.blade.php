@@ -39,20 +39,18 @@
                 <li>
                     <a href="#sidebarAuth" data-bs-toggle="collapse">
                         <i data-feather="grid"></i>
-                        <span> Pages </span>
+                        <span>Banner</span>
                         <span class="menu-arrow"></span>
                     </a>
                     <div class="collapse" id="sidebarAuth">
                         <ul class="nav-second-level">
                             <li>
-                                <a href="#">Menu 1</a>
+                                <a href="{{ route('admin.crousals.index') }}">List</a>
                             </li>
                             <li>
-                                <a href="#">Menu 2</a>
+                                <a href="{{ route('admin.crousals.create') }}">Create</a>
                             </li>
-                            <li>
-                                <a href="#">Menu 2</a>
-                            </li>
+                           
                         </ul>
                     </div>
                 </li>
